@@ -49,7 +49,7 @@ public $modal =false;//cierre modal
         //session()->flash('message','se elimino exitosamente');
     } 
 
-    public function guardar(){
+    public function guardar(){// funcion guardar
         Producto::updateOrCreate(['id'=>$this->id],
         [
             'nombre' =>$this->nombre,
